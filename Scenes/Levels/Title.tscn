@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://b6unldxcwxg38"]
+
+[ext_resource type="Script" path="res://Scripts/Title.gd" id="1_h1d6q"]
+[ext_resource type="Texture2D" uid="uid://chnqfx5gvqi6g" path="res://Images/title.png" id="2_4oro3"]
+[ext_resource type="Texture2D" uid="uid://dtcqc3aml7kki" path="res://Images/bgTitle.png" id="2_fucg0"]
+[ext_resource type="Texture2D" uid="uid://dfnlm6vl5eduj" path="res://Images/btnNormal.png" id="4_bgl3o"]
+
+[node name="Title" type="Node2D"]
+script = ExtResource("1_h1d6q")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(160, 91.9111)
+scale = Vector2(20, 11.5111)
+texture = ExtResource("2_fucg0")
+
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(160, 48)
+scale = Vector2(3.12195, 4.44444)
+texture = ExtResource("2_4oro3")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 112.0
+offset_top = 96.0
+offset_right = 152.0
+offset_bottom = 136.0
+
+[node name="BtnNewGame" type="TextureButton" parent="Control"]
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 24.0
+texture_normal = ExtResource("4_bgl3o")
+stretch_mode = 0
+
+[node name="BtnOptions" type="TextureButton" parent="Control"]
+layout_mode = 0
+offset_top = 32.0
+offset_right = 96.0
+offset_bottom = 56.0
+texture_normal = ExtResource("4_bgl3o")
+stretch_mode = 0
+
+[connection signal="pressed" from="Control/BtnNewGame" to="." method="_on_btn_new_game_pressed"]
+[connection signal="pressed" from="Control/BtnOptions" to="." method="_on_btn_options_pressed"]

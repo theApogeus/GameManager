@@ -1,0 +1,17 @@
+[gd_scene load_steps=10 format=3 uid="uid://dy6jr1kx5rmd1"]
+
+[ext_resource type="Script" path="res://Scripts/GameManager.gd" id="1_polsu"]
+[ext_resource type="PackedScene" uid="uid://dobuu0d31a1j4" path="res://Scenes/Levels/Level1.tscn" id="2_4j7g0"]
+[ext_resource type="PackedScene" uid="uid://cqhmkaow4tbmq" path="res://Scenes/Levels/Logo.tscn" id="2_ql2v6"]
+[ext_resource type="PackedScene" uid="uid://b6unldxcwxg38" path="res://Scenes/Levels/Title.tscn" id="2_vcwjm"]
+[ext_resource type="PackedScene" uid="uid://cdsdss1u3l41v" path="res://Scenes/Levels/Level2.tscn" id="3_33bx2"]
+[ext_resource type="PackedScene" uid="uid://h8p18ex242h1" path="res://Scenes/Levels/Options.tscn" id="3_uxouu"]
+[ext_resource type="PackedScene" uid="uid://daxj7yjutrmo5" path="res://Scenes/Levels/Level3.tscn" id="4_ccgs8"]
+[ext_resource type="PackedScene" uid="uid://caiwl7s0dekvk" path="res://Scenes/Levels/Level4.tscn" id="5_1mn8d"]
+[ext_resource type="PackedScene" uid="uid://dkn4fw6rui54q" path="res://Scenes/Transition.tscn" id="9_vnl11"]
+
+[node name="GameManager" type="Node2D"]
+script = ExtResource("1_polsu")
+gameLevels = Array[PackedScene]([ExtResource("2_ql2v6"), ExtResource("2_vcwjm"), ExtResource("3_uxouu"), ExtResource("2_4j7g0"), ExtResource("3_33bx2"), ExtResource("4_ccgs8"), ExtResource("5_1mn8d")])
+
+[node name="Transition" parent="." instance=ExtResource("9_vnl11")]

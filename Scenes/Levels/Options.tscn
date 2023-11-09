@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://h8p18ex242h1"]
+
+[ext_resource type="Script" path="res://Scripts/Options.gd" id="1_1mv0u"]
+[ext_resource type="Texture2D" uid="uid://3v8ifp1vbmnn" path="res://Images/bgOptions.png" id="2_k1mda"]
+[ext_resource type="Texture2D" uid="uid://bnwuevax8hm46" path="res://Images/options.png" id="2_vpo2x"]
+[ext_resource type="Texture2D" uid="uid://dfnlm6vl5eduj" path="res://Images/btnNormal.png" id="4_6n7m7"]
+
+[node name="Options" type="Node2D"]
+script = ExtResource("1_1mv0u")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(160, 91.9222)
+scale = Vector2(20, 11.5097)
+texture = ExtResource("2_k1mda")
+
+[node name="Options" type="Sprite2D" parent="."]
+position = Vector2(160, 36)
+scale = Vector2(1.86667, 2.66667)
+texture = ExtResource("2_vpo2x")
+
+[node name="BtnBack" type="TextureButton" parent="."]
+offset_left = 120.0
+offset_top = 144.0
+offset_right = 200.0
+offset_bottom = 168.0
+texture_normal = ExtResource("4_6n7m7")
+stretch_mode = 0
+
+[connection signal="pressed" from="BtnBack" to="." method="_on_btn_back_pressed"]
