@@ -1,6 +1,6 @@
 # GameManager
 
-Estrutura simples de um jogo. 
+Estrutura básica e simples para um jogo. 
 
 Segue com as seguintes Scenes:
 
