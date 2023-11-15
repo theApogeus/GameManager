@@ -11,6 +11,7 @@ var currentLevel : Node
 func _ready():
 	LoadLevel(indexLevel)
 
+
 func LoadLevel(indexLevel):
 	transition.play("transition_OUT")
 	currentLevel = gameLevels[indexLevel].instantiate()
