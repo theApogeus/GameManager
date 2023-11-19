@@ -3,10 +3,9 @@
 ![Godot v4.1.2](https://img.shields.io/badge/v4.1.2-blue?style=flat-square&logo=godot-engine&logoColor=white&label=Godot)
 ![GitHub license](https://img.shields.io/badge/MIT-blue?style=flat-square&label=License)
 
+Basic and simple structure for a game.
 
-Estrutura básica e simples para um jogo. 
-
-Segue com as seguintes Scenes:
+It continues with the following Scenes:
 
 * Logo
 * Title
@@ -16,4 +15,4 @@ Segue com as seguintes Scenes:
 * Level 3
 * Level 4
   
-Além disso consta com GameManager e TransitionScene.
+In addition, it also has GameManager and TransitionScene.
