@@ -13,3 +13,7 @@ func _on_btn_new_game_pressed():
 
 func _on_btn_options_pressed():
 	gameManager.GoToLevel(gameManager.OPTIONS)
+
+
+func _on_btn_quit_pressed():
+	get_tree().quit()
