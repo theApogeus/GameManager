@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://caiwl7s0dekvk"]
+[gd_scene load_steps=6 format=3 uid="uid://caiwl7s0dekvk"]
 
 [ext_resource type="Texture2D" uid="uid://bbtebh5nf3vvh" path="res://Images/btnPrevious.png" id="1_7gqo5"]
 [ext_resource type="Texture2D" uid="uid://dg2r4tkfxld0n" path="res://Images/yellow.png" id="1_antb3"]
 [ext_resource type="Script" path="res://Scripts/Level.gd" id="1_jubym"]
 [ext_resource type="Texture2D" uid="uid://cco5rmqp0ik5w" path="res://Images/btnNext.png" id="2_3syfg"]
+[ext_resource type="Texture2D" uid="uid://dfnlm6vl5eduj" path="res://Images/btnNormal.png" id="5_uy6sl"]
 
 [node name="Level4" type="Node2D"]
 script = ExtResource("1_jubym")
@@ -29,5 +30,14 @@ offset_bottom = 112.0
 texture_normal = ExtResource("2_3syfg")
 stretch_mode = 0
 
+[node name="BtnBack" type="TextureButton" parent="."]
+offset_left = 120.0
+offset_top = 144.0
+offset_right = 200.0
+offset_bottom = 168.0
+texture_normal = ExtResource("5_uy6sl")
+stretch_mode = 0
+
 [connection signal="pressed" from="BtnPrevious" to="." method="_on_btn_previous_pressed"]
 [connection signal="pressed" from="BtnNext" to="." method="_on_btn_next_pressed"]
+[connection signal="pressed" from="BtnBack" to="." method="_on_btn_back_pressed"]
