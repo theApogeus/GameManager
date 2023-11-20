@@ -17,11 +17,12 @@ func LoadLevel(indexLevel):
 	add_child(currentLevel)
 
 
-func GoToLevel(indexLevel):
+func GoToLevel(index):
 	transition.play("transition_IN")
 	await transition.animation_finished
 	currentLevel.queue_free()
 	await get_tree().process_frame
+	indexLevel = index
 	LoadLevel(indexLevel)
 
 
