@@ -1,6 +1,5 @@
 extends Node2D
 
-
 @export var gameLevels : Array[PackedScene] = []
 @onready var transition := $Transition/AnimationPlayer
 enum {LOGO, TITLE, OPTIONS, LEVEL1, LEVEL2, LEVEL3, LEVEL4} 
