@@ -12,3 +12,6 @@ func _on_btn_next_pressed():
 	gameManager.NextLevel()
 #	gameManager.GoToLevel(gameManager.LEVEL2)
 	pass # Replace with function body.
+
+func _on_btn_back_pressed():
+	gameManager.GoToLevel(gameManager.TITLE)
