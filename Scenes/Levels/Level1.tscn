@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://ci7or5h8s0eak" path="res://Images/blue.png" id="1_2jqkf"]
 [ext_resource type="Texture2D" uid="uid://bbtebh5nf3vvh" path="res://Images/btnPrevious.png" id="1_a5xbn"]
-[ext_resource type="Script" path="res://Scripts/Level.gd" id="1_ol5ah"]
+[ext_resource type="Script" uid="uid://c18r7185yyqe" path="res://Scripts/Level.gd" id="1_ol5ah"]
 [ext_resource type="Texture2D" uid="uid://cco5rmqp0ik5w" path="res://Images/btnNext.png" id="2_vcicg"]
 
 [node name="Level1" type="Node2D"]
